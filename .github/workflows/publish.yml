@@ -28,7 +28,7 @@ jobs:
           touch site/farm-stock-book/.nojekyll
           cp config.js site/farm-stock-book/config.js
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: site/farm-stock-book
       - id: deployment
