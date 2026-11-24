@@ -26,6 +26,7 @@ jobs:
         run: |
           unzip -q farm-stock-book.zip -d site
           touch site/farm-stock-book/.nojekyll
+          cp config.js site/farm-stock-book/config.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
